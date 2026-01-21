@@ -58,6 +58,7 @@ class DevSession(TimeStampedModel):
         indexes = [
             models.Index(fields=["user", "is_archived"]),
             models.Index(fields=["last_activity_at"]),
+            models.Index(fields=["run_mode"]),
         ]
 
     def __str__(self):
@@ -115,7 +116,6 @@ class DevRun(models.Model):
         db_table = "dev_run"
         indexes = [
             models.Index(fields=["session", "created_at"]),
-            models.Index(fields=["run_mode"]),
         ]
         ordering = ["-created_at"]
 

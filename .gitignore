@@ -1,0 +1,15 @@
+# Environments
+.env
+.venv/
+
+**/migrations/
+**/**/migrations/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs
+.vscode/

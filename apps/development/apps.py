@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class DevelopmentConfig(AppConfig):
-    name = "development"
+    name = "apps.development"
